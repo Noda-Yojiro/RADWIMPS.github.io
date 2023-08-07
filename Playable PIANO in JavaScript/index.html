@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html+css+js实现可弹的钢琴</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>可以弹的钢琴</h2>
+        <div class="column volume-slider">
+          <span>卷</span><input type="range" min="0" max="1" value="0.5" step="any">
+        </div>
+        <div class="column keys-checkbox">
+          <span>显示钢琴键</span><input type="checkbox" checked>
+        </div>
+      </header>
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>;</span></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <span class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+  
+      <div class="media-icons">
+        <a href="#" style="background: #1da1f2;">
+          <i class="fa-solid fa-envelope"></i>
+          <!-- <i class="fa-brands fa-pinterest"></i> -->
+          <span class="tooltip" style="color: #1da1f2;">Mail</span>
+        </a>
+        <a href="https://www.youtube.com/@RADWIMPS_official" style="background: #ff0000;">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="tooltip" style="color: #ff0000;">YouTube</span>
+        </a>
+        <a href="https://www.tiktok.com/@radwimps_official" style="background: #000000;">
+          <i class="fa-brands fa-tiktok"></i>
+          <span class="tooltip" style="color: black;">Tiktok</span>
+        </a>
+        <a href="https://www.instagram.com/radwimps_jp" style="background: #E4405F; font-size: 24px;">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="tooltip" style="color: #ff0000;">Instagram</span>
+        </a>
+        <a href="https://twitter.com/RADWIMPS" style="background: #1da1f2;">
+          <i class="fa-brands fa-twitter"></i>
+          <span class="tooltip" style="color: #1da1f2;">Twitter</span>
+        </a>
+        <a href="https://www.facebook.com/radwimps.official" style="background: #4267b2;">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span class="tooltip" style="color: #4267b2;">Facebook</span>
+        </a>
+        <a href="#" style="background: #0088CC; font-size: 18px;">
+          <i class="fa-brands fa-telegram"></i>
+          <!-- <img src="images/Telegram_(software)-Logo.wine.png" style="height: 48px; width: 48px; border-radius: 50%;" alt=""> -->
+          <!-- <i class="fa-brands fa-dribbble"></i> -->
+          <span class="tooltip" style="color: #0088CC;">Telegram</span>
+        </a>
+        <a href="#" style="background: #8e36ff">
+          <i class="fa-brands fa-github"></i>
+          <span class="tooltip" style="color: #8e36ff;">Github</span>
+        </a>
+        <a href="#" style="background: #00C300; font-size: 24px;">
+          <i class="fa-brands fa-line"></i>
+          <!-- <i class="fa-brands fa-linkedin"></i> -->
+          <span class="tooltip" style="color: #00C300">Line</span>
+        </a>
+        <a href="#" style="background-color: #1da1f2;">
+          <img src="icon32_wx_logo.png" style="height: 24px; width: 24px;" alt="">
+          <span class="tooltip" style="color: #00C300">WeChat</span>
+        </a>
+        <a href="#" style="background: #1da1f2">
+          <!-- <img src="images/Tencent_QQ-Logo.wine.png" style="height: 32px; width: 32px;" alt=""> -->
+          <i class="fa-brands fa-qq"></i>
+          <span class="tooltip" style="color: #1da1f2">QQ:2322189664</span>
+        </a>
+        <a href="../html/mine.html" style="background: #1da1f2">
+          <i class="fa-solid fa-reply"></i>
+          <!-- <img src="images/icon-park-outline_return.png" style="height: 16px; width: 16px;" alt=""> -->
+          <!-- <span class="tooltip" style="color: #1da1f2">返回</span> -->
+        </a>
+      </div>
+    </div>
+  
+    <script>
+      const closeBtn = document.querySelector(".close-btn");
+  
+      closeBtn.addEventListener("click", () => {
+        closeBtn.classList.toggle("open");
+      });
+    </script>
+
+  </body>
+</html>
