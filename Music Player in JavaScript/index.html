@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icon.css">
+      <!-- Fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-icons">expand_more</i>
+      <span>Now Playing</span>
+      <i class="material-icons">more_horiz</i>
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container">
+    <span class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+
+    <div class="media-icons">
+      <a href="#" style="background: #1da1f2;">
+        <i class="fa-solid fa-envelope"></i>
+        <!-- <i class="fa-brands fa-pinterest"></i> -->
+        <span class="tooltip" style="color: #1da1f2;">Mail</span>
+      </a>
+      <a href="https://www.youtube.com/@RADWIMPS_official" style="background: #ff0000;">
+        <i class="fa-brands fa-youtube"></i>
+        <span class="tooltip" style="color: #ff0000;">YouTube</span>
+      </a>
+      <a href="https://www.tiktok.com/@radwimps_official" style="background: #000000;">
+        <i class="fa-brands fa-tiktok"></i>
+        <span class="tooltip" style="color: black;">Tiktok</span>
+      </a>
+      <a href="https://www.instagram.com/radwimps_jp/" style="background: #E4405F; font-size: 24px;">
+        <i class="fa-brands fa-instagram"></i>
+        <span class="tooltip" style="color: #ff0000;">Instagram</span>
+      </a>
+      <a href="https://twitter.com/RADWIMPS" style="background: #1da1f2;">
+        <i class="fa-brands fa-twitter"></i>
+        <span class="tooltip" style="color: #1da1f2;">Twitter</span>
+      </a>
+      <a href="https://www.facebook.com/radwimps.official" style="background: #4267b2">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span class="tooltip" style="color: #4267b2;">Facebook</span>
+      </a>
+      <a href="#" style="background: #0088CC; font-size: 18px;">
+        <i class="fa-brands fa-telegram"></i>
+        <!-- <img src="images/Telegram_(software)-Logo.wine.png" style="height: 48px; width: 48px; border-radius: 50%;" alt=""> -->
+        <!-- <i class="fa-brands fa-dribbble"></i> -->
+        <span class="tooltip" style="color: #0088CC;">Telegram</span>
+      </a>
+      <a href="#" style="background: #8e36ff">
+        <i class="fa-brands fa-github"></i>
+        <span class="tooltip" style="color: #8e36ff;">Github</span>
+      </a>
+      <a href="#" style="background: #00C300; font-size: 24px;">
+        <i class="fa-brands fa-line"></i>
+        <!-- <i class="fa-brands fa-linkedin"></i> -->
+        <span class="tooltip" style="color: #00C300;">Line</span>
+      </a>
+      <a href="#" style="background-color: #1da1f2;">
+        <img src="images/icon32_wx_logo.png" style="height: 24px; width: 24px;" alt="">
+        <span class="tooltip" style="color: #00C300;">WeChat</span>
+      </a>
+      <a href="#" style="background: #1da1f2">
+        <!-- <img src="images/Tencent_QQ-Logo.wine.png" style="height: 32px; width: 32px;" alt=""> -->
+        <i class="fa-brands fa-qq"></i>
+        <span class="tooltip" style="color: #1da1f2;">QQ:2322189664</span>
+      </a>
+      <a href="../html/mine.html" style="background: #1da1f2;">
+        <i class="fa-solid fa-reply"></i>
+        <!-- <img src="images/icon-park-outline_return.png" style="height: 16px; width: 16px;" alt=""> -->
+        <!-- <span class="tooltip" style="color: #1da1f2;">返回</span> -->
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const closeBtn = document.querySelector(".close-btn");
+
+    closeBtn.addEventListener("click", () => {
+      closeBtn.classList.toggle("open");
+    });
+  </script>
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
